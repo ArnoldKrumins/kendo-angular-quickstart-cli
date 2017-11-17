@@ -16,7 +16,7 @@ import { GridComponent } from './grid/grid.component';
  * // Load all required data for the de locale
  * import '@progress/kendo-angular-intl/locales/de/all';
  */
-
+import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { GridComponent } from './grid/grid.component';
 
     // ... and register it
     ButtonsModule,
-    GridModule
+    GridModule,
+    AlertModule.forRoot()
   ],
   bootstrap: [AppComponent]
 })
